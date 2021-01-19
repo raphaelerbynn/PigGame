@@ -1,0 +1,127 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.board::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body{
+	background-image: linear-gradient(rgba(62, 266, 0, 0.4), rgba(62, 20, 20, 0.4)), url(images/bg1.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+	font-weight: 300;
+	position: relative;
+	height: 100vh;
+	color: #555;
+}
+h2{
+	font-size: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	position: relative;
+	display: inline;
+}
+button{
+	position: absolute;
+	width: 200px;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 20px;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: 300;
+}
+
+.board{
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+}
+.playerScore{
+	text-align: center;
+	font-size: 80px;
+	font-weight: 100;
+	color: #eb4d4d;
+	margin-bottom: 130px;
+}
+.currentScore{
+	background-color: #000d4d;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+	width: 45%;
+	padding: 18px;
+	text-transform: uppercase;
+	font-size: 12px
+}
+
+.active{background-color: #ebebeb;}
+.active h2{font-weight: 300;}
+
+#player_1,
+#player_2{
+	width: 50%;
+	float: left;
+	border: 0.3px solid;
+	height: 600px;
+	padding: 100px;
+}
+#player_0_currentScore,
+#player_1_currentScore{
+	font-size: 30px
+}
+#activePlayer_1_icon,
+#activePlayer_2_icon{
+	display: none;
+	height: 15px;
+	text-align: center;
+	padding-bottom: 3px;
+	margin-bottom: 3px;
+}
+
+#winner{
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%);
+	font-family: Lato;
+	font-weight: 300;
+	color: #eb4d4d;
+	font-size: 50px;
+	background-color: #f5eddd;
+	padding: 10px;
+	border-radius: 10px;
+}
+#rollDice{
+	top: 500px;
+	left: 40%;
+}
+#hold{
+	top: 500px;
+	left: 60%;
+}
+#newGame{
+	top: 20px;
+}
+.dice{
+	position: absolute;
+	width: 70px;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%);
+	box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.6);
+}
